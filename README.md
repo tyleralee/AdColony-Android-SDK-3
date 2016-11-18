@@ -1,7 +1,7 @@
 AdColony Android SDK
 ==================================
-Modified: October 10, 2016<br>
-SDK Version: 3.0.4
+Modified: November 9, 2016<br>
+SDK Version: 3.0.5
 
 Getting Started with AdColony:
 ----------------------------------
@@ -20,6 +20,10 @@ To start using Compass™ today, follow this [link.](https://clients.adcolony.co
 Questions?  E-mail us at support@adcolony.com
 
 
+Updating from Our 2.x SDK:
+----------------------------------
+Updating from our AdColony 2.x SDK is not a drag and drop update, but rather includes breaking API and process changes. Please review our [documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
+
 Download:
 ----------------------------------
 ####Manually:####
@@ -30,6 +34,11 @@ See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/
 
 Change Logs:
 ----------------------------------
+####3.0.5####
+1. Exposed onLeftApplication and onClicked ad callbacks.<br>
+2. Fixed possible ad display issue for apps that configure AdColony post onCreate.<br>
+
+===
 ####3.0.4####
 1. Initial public release.<br>
 2. Fixed issue with our x86 builds.<br>
@@ -65,4 +74,4 @@ Note that U.S. based companies will need to complete the W-9 form and send it to
 
 Contact Us:
 ----------------------------------
-For more information, please visit AdColony.com. For questions or assistance, please email us at aurora@adcolony.com.
+For more information, please visit AdColony.com. For questions or assistance, please email us at support@adcolony.com.
