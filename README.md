@@ -1,7 +1,7 @@
 AdColony Android SDK
 ==================================
-Modified: November 9, 2016<br>
-SDK Version: 3.0.5
+Modified: November 30, 2016<br>
+SDK Version: 3.0.6
 
 Getting Started with AdColony:
 ----------------------------------
@@ -31,9 +31,14 @@ See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/
 
 Change Logs:
 ----------------------------------
+####3.0.6####
+1. Fixed an edge case NPE in our interstitial Activity.<br>
+3. General stability improvements.
+
+===
 ####3.0.5####
 1. Exposed onLeftApplication and onClicked ad callbacks.<br>
-2. Fixed possible ad display issue for apps that configure AdColony post onCreate.<br>
+2. Fixed possible ad display issue for apps that configure AdColony post onCreate.
 
 ===
 ####3.0.4####

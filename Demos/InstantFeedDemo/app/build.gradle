@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile 'com.adcolony:sdk:3.0.5'
+    compile 'com.adcolony:sdk:3.0.6'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.google.android.gms:play-services-ads:9.8.0'
 }
