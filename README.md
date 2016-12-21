@@ -1,7 +1,7 @@
 AdColony Android SDK
 ==================================
-Modified: November 30, 2016<br>
-SDK Version: 3.0.6
+Modified: December 20, 2016<br>
+SDK Version: 3.0.7
 
 Getting Started with AdColony:
 ----------------------------------
@@ -31,9 +31,13 @@ See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/
 
 Change Logs:
 ----------------------------------
+####3.0.7####
+1. Increased safety in the case where our interstitial Activity is destroyed while paused due to memory pressure.
+
+===
 ####3.0.6####
 1. Fixed an edge case NPE in our interstitial Activity.<br>
-3. General stability improvements.
+2. General stability improvements.
 
 ===
 ####3.0.5####
