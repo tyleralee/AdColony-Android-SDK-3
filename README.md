@@ -1,7 +1,7 @@
 AdColony Android SDK
 ==================================
-Modified: December 20, 2016<br>
-SDK Version: 3.0.7
+Modified: March 6, 2017<br>
+SDK Version: 3.1.0
 
 Getting Started with AdColony:
 ----------------------------------
@@ -13,8 +13,7 @@ AdColony Compass™ provides the tools to increase user engagement through targe
 
 Combined with AdColony’s award-winning Instant-Play™ HD video ads, Compass™ features can also stimulate monetization within apps. Compass™ tools allow publishers to incentivize desired user behaviors and improve KPI's for apps without heavy development work or altering carefully balanced in-app economies.
 
-To start using Compass™ today, follow this [link.](https://clients.adcolony.com/compass/info)
-Questions?  E-mail us at support@adcolony.com
+The Compass™ early access program has ended, and we are no longer accepting new partners for Compass™ access. Publishers who are currently using AdColony Compass™ services should email compass@adcolony.com for more details.
 
 
 Updating from Our 2.x SDK:
@@ -31,6 +30,16 @@ See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/
 
 Change Logs:
 ----------------------------------
+####3.1.0####
+1. Added capability to retrieve the net CPM bid value for a zone's next ad. <br>
+2. MOAT viewability support. <br>
+3. Added viewable impression tracking metric. <br>
+4. Added support for our dashboard's play frequency zone setting. <br>
+5. Fixed edge case IllegalStateException and NullPointerException on our MediaPlayer handler when our interstitial Activity is destroyed.<br>
+6. No longer setting HTTPUrlConnection redirect property globally. <br>
+7. Lowered our library's minimum SDK version to fix build issues with apps that support earlier versions. Devices below API 14 will still be blocked at runtime from viewing ads.
+
+===
 ####3.0.7####
 1. Increased safety in the case where our interstitial Activity is destroyed while paused due to memory pressure.
 
