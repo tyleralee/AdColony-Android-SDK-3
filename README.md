@@ -31,13 +31,12 @@ See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/
 Change Logs:
 ----------------------------------
 ####3.1.0####
-1. Added capability to retrieve the net CPM bid value for a zone's next ad. <br>
-2. MOAT viewability support. <br>
-3. Added viewable impression tracking metric. <br>
-4. Added support for our dashboard's play frequency zone setting. <br>
-5. Fixed edge case IllegalStateException and NullPointerException on our MediaPlayer handler when our interstitial Activity is destroyed.<br>
-6. No longer setting HTTPUrlConnection redirect property globally. <br>
-7. Lowered our library's minimum SDK version to fix build issues with apps that support earlier versions. Devices below API 14 will still be blocked at runtime from viewing ads.
+1. MOAT viewability support. <br>
+2. Added viewable impression tracking metric. <br>
+3. Added support for our dashboard's play frequency zone setting. <br>
+4. Fixed edge case IllegalStateException and NullPointerException on our MediaPlayer handler when our interstitial Activity is destroyed.<br>
+5. No longer setting HTTPUrlConnection redirect property globally. <br>
+6. Lowered our library's minimum SDK version to fix build issues with apps that support earlier versions. Devices below API 14 will still be blocked at runtime from viewing ads.
 
 ===
 ####3.0.7####
