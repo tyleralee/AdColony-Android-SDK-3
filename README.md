@@ -22,15 +22,15 @@ Updating from our AdColony 2.x SDK is not a drag and drop update, but rather inc
 
 Download:
 ----------------------------------
-####Manually:####
+#### Manually: ####
 Click the "Download ZIP" button above to download our SDK distribution manually.
 
-####Via Gradle:####
+#### Via Gradle: ####
 See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/wiki/Project-Setup) on our Wiki.
 
 Change Logs:
 ----------------------------------
-####3.1.0####
+#### 3.1.0 ####
 1. MOAT viewability support. <br>
 2. Added viewable impression tracking metric. <br>
 3. Added support for our dashboard's play frequency zone setting. <br>
@@ -38,41 +38,41 @@ Change Logs:
 5. No longer setting HTTPUrlConnection redirect property globally. <br>
 6. Lowered our library's minimum SDK version to fix build issues with apps that support earlier versions. Devices below API 14 will still be blocked at runtime from viewing ads.
 
-===
-####3.0.7####
+----------------------------------
+#### 3.0.7 ####
 1. Increased safety in the case where our interstitial Activity is destroyed while paused due to memory pressure.
 
-===
-####3.0.6####
+----------------------------------
+#### 3.0.6 ####
 1. Fixed an edge case NPE in our interstitial Activity.<br>
 2. General stability improvements.
 
-===
-####3.0.5####
+----------------------------------
+#### 3.0.5 ####
 1. Exposed onLeftApplication and onClicked ad callbacks.<br>
 2. Fixed possible ad display issue for apps that configure AdColony post onCreate.
 
-===
-####3.0.4####
+----------------------------------
+#### 3.0.4 ####
 1. Initial public release.<br>
 2. Fixed issue with our x86 builds.<br>
 3. Various stability improvements/bug fixes.
 4. Added messaging features to Compass, which includes both in-app messages and push notifications.
 
-===
-####3.0.3.2####
+----------------------------------
+#### 3.0.3.2 ####
 1. Support for vertical ads and improved ad orientation controls.<br>
 2. Added armeabi-v7a builds.<br>
 3. Added support for multi-screen.<br>
 4. Changed package name to com.adcolony.sdk.<br>
 5. Removed theme requirement for AdColony Activity manifest declarations.
 
-===
-####3.0.2.2####
+----------------------------------
+#### 3.0.2.2 ####
 1. Ensure out of date files from earlier SDK installs are invalidated.
 
-===
-####3.0.2.1:####
+----------------------------------
+#### 3.0.2.1: ####
 1. Added support for native ads.<br>
 2. Added support for in-app purchase promo ads.<br>
 3. Added support for custom messages.<br>
