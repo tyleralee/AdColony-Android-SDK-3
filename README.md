@@ -1,19 +1,15 @@
 AdColony Android SDK
 ==================================
-Modified: March 6, 2017<br>
-SDK Version: 3.1.0
+Modified: March 28, 2017<br>
+SDK Version: 3.1.1
 
 Getting Started with AdColony:
 ----------------------------------
 First time and returning users should review the [documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
 
-Thanks for joining AdColony on the next step in mobile monetization. We're committed to giving our partners the tools to grow, engage, and monetize successfully. Our Aurora SDK contains huge leaps forward in our capabilities, with benefits for both publishers and advertisers. We would also like to highlight the addition of AdColony Compass™ to our suite of products. AdColony Compass provides publishers with intuitive marketing tools to maximize the value of users throughout your app economy, like creating rewards, achievements, push notifications and in-app messaging.
+Our Aurora SDK contains huge leaps forward in our capabilities, with benefits for both publishers and advertisers.
 
-AdColony Compass™ provides the tools to increase user engagement through targeted user communications, achievements and rewards.
-
-Combined with AdColony’s award-winning Instant-Play™ HD video ads, Compass™ features can also stimulate monetization within apps. Compass™ tools allow publishers to incentivize desired user behaviors and improve KPI's for apps without heavy development work or altering carefully balanced in-app economies.
-
-The Compass™ early access program has ended, and we are no longer accepting new partners for Compass™ access. Publishers who are currently using AdColony Compass™ services should email compass@adcolony.com for more details.
+Please also note that the Compass™ early access program has ended, and we are no longer accepting new partners for Compass™ access. Publishers who are currently using AdColony Compass™ services should email compass@adcolony.com for more details.
 
 
 Updating from Our 2.x SDK:
@@ -29,6 +25,10 @@ Click the "Download ZIP" button above to download our SDK distribution manually.
 See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/wiki/Project-Setup) on our Wiki.
 
 Change Logs:
+----------------------------------
+#### 3.1.1 ####
+1. Removed Compass™ APIs.
+
 ----------------------------------
 #### 3.1.0 ####
 1. MOAT viewability support. <br>
