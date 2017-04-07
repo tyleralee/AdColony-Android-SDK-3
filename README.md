@@ -18,7 +18,7 @@ For detailed information about the AdColony SDK, see our [Android SDK documentat
 * Drag and drop the adcolony.jar into your project.
 * Drag and drop the native libraries your application supports into your project.
 
-#### Via Gradle####
+#### Via Gradle
 * See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/wiki/Project-Setup) on our Wiki.
 
 #### Updating from 2.x:
