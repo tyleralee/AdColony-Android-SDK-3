@@ -1,95 +1,69 @@
-AdColony Android SDK
-==================================
-Modified: April 6, 2017<br>
-SDK Version: 3.1.2
+# AdColony Android SDK
+* Modified: April 6, 2017
+* SDK Version: 3.1.2
 
-Getting Started with AdColony:
-----------------------------------
-First time and returning users should review the [documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
+## Overview
+Increase your revenue with the advertising SDK trusted by the world’s top publishers. AdColony delivers high-definition Instant-Play™ video ads that can be displayed anywhere within your application. AdColony contains V4VC™, a secure system for rewarding users of your app with virtual currency upon the completion of video plays.
 
-Our Aurora SDK contains huge leaps forward in our capabilities, with benefits for both publishers and advertisers.
+For detailed information about the AdColony SDK, see our [Android SDK documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
 
-Please also note that the Compass™ early access program has ended, and we are no longer accepting new partners for Compass™ access. Publishers who are currently using AdColony Compass™ services should email compass@adcolony.com for more details.
+**Note:** The AdColony Compass™ early access program has ended, and we are no longer accepting new partners. Publishers who are currently using those services should email compass@adcolony.com for more details.
 
+## Usage
 
-Updating from Our 2.x SDK:
-----------------------------------
-Updating from our AdColony 2.x SDK is not a drag and drop update, but rather includes breaking API and process changes. Please review our [documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
+### Installation
 
-Download:
-----------------------------------
-#### Manually: ####
-Click the "Download ZIP" button above to download our SDK distribution manually.
+#### Manual
 
-#### Via Gradle: ####
-See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/wiki/Project-Setup) on our Wiki.
+* Drag and drop the adcolony.jar into your project.
+* Drag and drop the native libraries your application supports into your project.
 
-Change Logs:
-----------------------------------
-#### 3.1.2 ####
-1. Updates for Unity and Adobe Air plugins.
+#### Via Gradle####
+* See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/wiki/Project-Setup) on our Wiki.
 
-----------------------------------
-#### 3.1.1 ####
-1. Removed Compass™ APIs.
+#### Updating from 2.x:
+Please note that updating from our 2.x SDK is not a drag and drop update, but rather includes breaking API and process changes. In order to take advantage of the 3.x SDK, a complete re-integration is necessary. Please review our [documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
 
-----------------------------------
-#### 3.1.0 ####
-1. MOAT viewability support. <br>
-2. Added viewable impression tracking metric. <br>
-3. Added support for our dashboard's play frequency zone setting. <br>
-4. Fixed edge case IllegalStateException and NullPointerException on our MediaPlayer handler when our interstitial Activity is destroyed.<br>
-5. No longer setting HTTPUrlConnection redirect property globally. <br>
-6. Lowered our library's minimum SDK version to fix build issues with apps that support earlier versions. Devices below API 14 will still be blocked at runtime from viewing ads.
+### Quick Start
+The basics of using the AdColony SDK to serve ads to your users are:
+1. Configure the service *(once)*
+1. Request an ad *(We recommend requesting a new ad when an ad expires)*
+1. Show the ad
 
-----------------------------------
-#### 3.0.7 ####
-1. Increased safety in the case where our interstitial Activity is destroyed while paused due to memory pressure.
+For example:
 
-----------------------------------
-#### 3.0.6 ####
-1. Fixed an edge case NPE in our interstitial Activity.<br>
-2. General stability improvements.
+```Java
+AdColonyInterstitial _ad = null;
+AdColonyInterstitialListener _listener = null;
 
-----------------------------------
-#### 3.0.5 ####
-1. Exposed onLeftApplication and onClicked ad callbacks.<br>
-2. Fixed possible ad display issue for apps that configure AdColony post onCreate.
+void configure() {
+    AdColony.configure(activity, null, /*app_id*/, /* zone_id_1, zone_id_2 */);
 
-----------------------------------
-#### 3.0.4 ####
-1. Initial public release.<br>
-2. Fixed issue with our x86 builds.<br>
-3. Various stability improvements/bug fixes.
-4. Added messaging features to Compass, which includes both in-app messages and push notifications.
+    _listener = new AdColonyInterstitialListener() {
+        @Override
+        public void onRequestFilled(AdColonyInterstitial ad) {
+            _ad = ad;
+        }
+    };
+}
 
-----------------------------------
-#### 3.0.3.2 ####
-1. Support for vertical ads and improved ad orientation controls.<br>
-2. Added armeabi-v7a builds.<br>
-3. Added support for multi-screen.<br>
-4. Changed package name to com.adcolony.sdk.<br>
-5. Removed theme requirement for AdColony Activity manifest declarations.
+void request() {
+    AdColony.requestInterstitial(/* zone_id_1 */, activity, null);
+}
 
-----------------------------------
-#### 3.0.2.2 ####
-1. Ensure out of date files from earlier SDK installs are invalidated.
+void show() {
+    if (_ad != null) {
+        _ad.show();
+    }
+}
+```
 
-----------------------------------
-#### 3.0.2.1: ####
-1. Added support for native ads.<br>
-2. Added support for in-app purchase promo ads.<br>
-3. Added support for custom messages.<br>
-4. Introduction of AdColony Compass™.<br>
-5. Various stability improvements/bug fixes.
+For detailed information about the AdColony SDK, see our [Android SDK documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
 
-Legal Requirements:
-----------------------------------
+## Legal Requirements
 By downloading the AdColony SDK, you are granted a limited, non-commercial license to use and review the SDK solely for evaluation purposes.  If you wish to integrate the SDK into any commercial applications, you must register an account with AdColony and accept the terms and conditions on the AdColony website.
 
 Note that U.S. based companies will need to complete the W-9 form and send it to us before publisher payments can be issued.
 
-
-Contact Us:
-----------------------------------
+## Contact Us
 For more information, please visit AdColony.com. For questions or assistance, please email us at support@adcolony.com.
