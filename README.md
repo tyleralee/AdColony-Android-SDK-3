@@ -1,7 +1,7 @@
 AdColony Android SDK
 ==================================
-Modified: March 28, 2017<br>
-SDK Version: 3.1.1
+Modified: April 6, 2017<br>
+SDK Version: 3.1.2
 
 Getting Started with AdColony:
 ----------------------------------
@@ -25,6 +25,10 @@ Click the "Download ZIP" button above to download our SDK distribution manually.
 See the [project setup page](https://github.com/AdColony/AdColony-Android-SDK-3/wiki/Project-Setup) on our Wiki.
 
 Change Logs:
+----------------------------------
+#### 3.1.2 ####
+1. Updates for Unity and Adobe Air plugins.
+
 ----------------------------------
 #### 3.1.1 ####
 1. Removed Compass™ APIs.
