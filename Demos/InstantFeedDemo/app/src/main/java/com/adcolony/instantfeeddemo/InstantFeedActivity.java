@@ -59,15 +59,15 @@ public class InstantFeedActivity extends Activity
             }
 
             @Override
-            public void onMuted( AdColonyNativeAdView view )
+            public void onAudioStopped( AdColonyNativeAdView view )
             {
-                Log.d( TAG, "onMuted" );
+                Log.d( TAG, "onAudioStopped" );
             }
 
             @Override
-            public void onUnmuted( AdColonyNativeAdView view )
+            public void onAudioStarted( AdColonyNativeAdView view )
             {
-                Log.d( TAG, "onUnmuted" );
+                Log.d( TAG, "onAudioStarted" );
             }
 
             @Override
