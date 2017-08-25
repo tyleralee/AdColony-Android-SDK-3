@@ -26,7 +26,7 @@ To get started, here is the link to [Android SDK integration documentation](http
 Please note that updating from our 2.x SDK is not a drag and drop update, but rather includes breaking API and process changes. In order to take advantage of the 3.x SDK, a complete re-integration is necessary. Please review our [documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
 
 #### SDK 3.x:
-Updating from our previous SDK 3.x to SDK 3.2.0 is a simple drag and drop update or via gradle. 
+Updating from our previous SDK 3.x to SDK 3.2.0 is a simple drag and drop update or via gradle for interstitial and rewarded interstitial integrations. Partners using Instant-Feed should note the change to our callbacks [here.](https://adcolony-www-common.s3.amazonaws.com/Javadoc/3.2.0/index.html)
 
 **Manual**
 
