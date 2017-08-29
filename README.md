@@ -1,6 +1,6 @@
 # AdColony Android SDK
 * Modified: August 24th, 2017
-* SDK Version: 3.2.0
+* SDK Version: 3.2.1
 
 ## Overview
 AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https://www.adcolony.com/technology/instant-play/), [interactive Aurora™ Video](https://www.adcolony.com/technology/auroravideo/), and Aurora™ Playable ads that can be displayed anywhere within your application. Our advertising SDK is trusted by the world’s top gaming and non-gaming publishers, delivering them the highest monetization opportunities from brand and performance advertisers. AdColony’s SDK can monetize a wide range of ad formats including in-stream/pre-roll, out-stream/interstitial and V4VC™, a secure system for rewarding users of your app with virtual currency upon the completion of video and playable ads.
@@ -26,7 +26,15 @@ To get started, here is the link to [Android SDK integration documentation](http
 Please note that updating from our 2.x SDK is not a drag and drop update, but rather includes breaking API and process changes. In order to take advantage of the 3.x SDK, a complete re-integration is necessary. Please review our [documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
 
 #### SDK 3.x:
-Updating from our previous SDK 3.x to SDK 3.2.0 is a simple drag and drop update or via gradle for interstitial and rewarded interstitial integrations. Partners using Instant-Feed should note the change to our callbacks [here.](https://adcolony-www-common.s3.amazonaws.com/Javadoc/3.2.0/index.html)
+Updating from our previous SDK 3.x to SDK 3.2.1 requires the following addition to your proguard configuration:
+```
+-keepclassmembers class com.adcolony.sdk.ADCNative** {
+    *;
+ }
+ ```
+Partners using Instant-Feed should note the change to our callbacks [here.](https://adcolony-www-common.s3.amazonaws.com/Javadoc/3.2.0/index.html)
+
+Update the AdColony library referenced by your project following the steps below:
 
 **Manual**
 
@@ -42,7 +50,7 @@ dependencies {
   /** 
    * Any other dependencies your module has are placed in this dependency configuration
    */
-  compile 'com.adcolony:sdk:3.2.0'
+  compile 'com.adcolony:sdk:3.2.1'
 }
 ```
 
