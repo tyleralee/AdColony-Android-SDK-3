@@ -1,5 +1,8 @@
 # Change Log
 
+## 3.2.1 (2017/08/28)
+* Fixed AAR hosted on Bintray.
+
 ## 3.2.0 (2017/08/24)
 * Android Oreo compatibility along with several bugs fixes, stabilty and security improvements.
 * User experience improvements via enhanced skippability controls and a new mute/unmute feature.
