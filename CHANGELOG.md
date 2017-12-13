@@ -1,4 +1,9 @@
 # Change Log
+## 3.3.0 (2017/12/13)
+* Added Integral Ad Science (IAS) for viewability measurement.
+* Fixed storage overuse issue reported by a small number of publishers upgrading from 2.x -> 3.x.
+* Added an app option that allows publishers to disable screen sleeps during ad playback.
+* Several bug fixes, memory usage optimizations, and stability improvements.
 
 ## 3.2.1 (2017/08/28)
 * Fixed AAR hosted on Bintray.
