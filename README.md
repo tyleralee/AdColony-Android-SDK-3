@@ -1,6 +1,6 @@
 # AdColony Android SDK
-* Modified: August 24th, 2017
-* SDK Version: 3.2.1
+* Modified: December 13th, 2017
+* SDK Version: 3.3.0
 
 ## Overview
 AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https://www.adcolony.com/technology/instant-play/), [interactive Aurora™ Video](https://www.adcolony.com/technology/auroravideo/), and Aurora™ Playable ads that can be displayed anywhere within your application. Our advertising SDK is trusted by the world’s top gaming and non-gaming publishers, delivering them the highest monetization opportunities from brand and performance advertisers. AdColony’s SDK can monetize a wide range of ad formats including in-stream/pre-roll, out-stream/interstitial and V4VC™, a secure system for rewarding users of your app with virtual currency upon the completion of video and playable ads.
@@ -8,14 +8,13 @@ AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https:/
 
 ## Release Notes
 
-#### Key Features of the SDK 3.2:
-* Android Oreo compatibility along with several bugs fixes, stabilty and security improvements.
-* User experience improvements via enhanced skippability controls and a new mute/unmute feature.
-* Post-install events APIs.
-* Crash reporting and a new, convenient test mode feature.
+#### Key Features of SDK 3.3:
+* Added Integral Ad Science (IAS) for viewability measurement.
+* Fixed storage overuse issue reported by a small number of publishers upgrading from 2.x -> 3.x.
+* Added an app option that allows publishers to disable screen sleeps during ad playback.
+* Several bug fixes, memory usage optimizations, and stability improvements.
 
-Here is the link to the [release notes](https://github.com/AdColony/AdColony-Android-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and please check out the 3.2.1 SDK [integration tips](https://www.adcolony.com/blog/2017/09/14/6-steps-optimize-321-sdk-integration/).
-
+Here is the link to the [release notes](https://github.com/AdColony/AdColony-Android-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions.
 
 ## Getting Started 
 To get started, here is the link to [Android SDK integration documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
@@ -26,14 +25,6 @@ To get started, here is the link to [Android SDK integration documentation](http
 Please note that updating from our 2.x SDK is not a drag and drop update, but rather includes breaking API and process changes. In order to take advantage of the 3.x SDK, a complete re-integration is necessary. Please review our [documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
 
 #### SDK 3.x:
-Updating from our previous SDK 3.x to SDK 3.2.1 requires the following addition to your proguard configuration:
-```
--keepclassmembers class com.adcolony.sdk.ADCNative** {
-    *;
- }
- ```
-Partners using Instant-Feed should note the change to our callbacks [here.](https://adcolony-www-common.s3.amazonaws.com/Javadoc/3.2.0/index.html)
-
 Update the AdColony library referenced by your project following the steps below:
 
 **Manual**
@@ -50,7 +41,7 @@ dependencies {
   /** 
    * Any other dependencies your module has are placed in this dependency configuration
    */
-  compile 'com.adcolony:sdk:3.2.1'
+  compile 'com.adcolony:sdk:3.3.0'
 }
 ```
 
