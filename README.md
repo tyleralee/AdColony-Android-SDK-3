@@ -14,7 +14,7 @@ AdColony delivers zero-buffering, [full-screen Instant-Play™ HD video](https:/
 * Added an app option that allows publishers to disable screen sleeps during ad playback.
 * Several bug fixes, memory usage optimizations, and stability improvements.
 
-Here is the link to the [release notes](https://github.com/AdColony/AdColony-Android-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions.
+Here is the link to the [release notes](https://github.com/AdColony/AdColony-Android-SDK-3/blob/master/CHANGELOG.md) for all the previous SDK versions and and please check out the 3.3.0 SDK [integration tips](https://www.adcolony.com/blog/2018/02/22/reaching-new-heights-sdk-3-3/).
 
 ## Getting Started 
 To get started, here is the link to [Android SDK integration documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
