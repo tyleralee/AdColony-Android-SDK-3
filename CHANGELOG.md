@@ -1,4 +1,7 @@
 # Change Log
+## 3.3.2 (2018/03/16)
+* Several bug fixes
+
 ## 3.3.0 (2017/12/13)
 * Added Integral Ad Science (IAS) for viewability measurement.
 * Fixed storage overuse issue reported by a small number of publishers upgrading from 2.x -> 3.x.
