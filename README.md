@@ -41,7 +41,7 @@ dependencies {
   /** 
    * Any other dependencies your module has are placed in this dependency configuration
    */
-  compile 'com.adcolony:sdk:3.3.0'
+  compile 'com.adcolony:sdk:3.3.2'
 }
 ```
 
